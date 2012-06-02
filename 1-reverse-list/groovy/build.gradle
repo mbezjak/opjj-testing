@@ -11,8 +11,8 @@ dependencies {
 }
 
 sourceSets {
-    main.java.srcDir 'src'
-    test.java.srcDir 'test'
+    main.groovy.srcDir 'src'
+    test.groovy.srcDir 'test'
 }
 
 task wrapper(type: Wrapper) {
