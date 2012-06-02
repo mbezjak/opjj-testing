@@ -13,7 +13,7 @@ Steps to import this project into eclipse:
 
  1. Open command line and execute:
 
-    $ ./gradlew eclipse
+        $ ./gradlew eclipse
 
  2. File -> Import
  3. From "General" select "Existing Projects into Workspace"
@@ -25,7 +25,7 @@ Steps to run all Spock tests:
 
  1. Open command line and execute:
 
-    $ ./gradlew test
+        $ ./gradlew test
 
  2. Test report is generated in `build/reports/tests` directory. Open
     `index.html` in any browser.
@@ -34,5 +34,4 @@ Steps to fool around with gradle:
 
  1. Open command line and execute:
 
-    $ ./gradlew
-
+        $ ./gradlew
