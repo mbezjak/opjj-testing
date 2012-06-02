@@ -1,3 +1,5 @@
+## Import
+
 Steps to import this project into eclipse:
 
  1. File -> Import
@@ -5,6 +7,8 @@ Steps to import this project into eclipse:
  3. Next
  4. Select root directory: one where this readme is located
  5. Finish
+
+## Test
 
 Steps to run all JUnit tests:
 
