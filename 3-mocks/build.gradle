@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    groovy 'org.codehaus.groovy:groovy:1.8.6'
+    testCompile 'org.easymock:easymock:3.1'
+    testCompile 'org.spockframework:spock-core:0.6-groovy-1.8'
+}
+
+task wrapper(type: Wrapper) {
+     gradleVersion = '1.0-rc-3'
+}
