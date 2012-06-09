@@ -9,7 +9,7 @@ public class StackCalculatorTest {
     private StackCalculator calc = new StackCalculator();
 
     @Test
-    public void pushShouldAddNumberToStack() {
+    public void pushShouldAddNumberToTheStack() {
         int n = 42;
         calc.push(n);
 
@@ -28,7 +28,7 @@ public class StackCalculatorTest {
     }
 
     @Test
-    public void addShouldAddTwoOperandsAndPushResultOnStack() {
+    public void addShouldAddTwoOperandsAndPushResultOnTheStack() {
         int a = 1;
         int b = 5;
         calc.push(a).push(b).add();

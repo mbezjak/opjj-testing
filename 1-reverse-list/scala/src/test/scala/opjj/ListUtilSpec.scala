@@ -16,16 +16,16 @@ class ListUtilSpec extends FlatSpec with ShouldMatchers {
 
   it should "be capable of reversing a list of integers" in {
     val list     = (1 to 5).toList
-    val expected = (5 to 1 by -1).toList
+    val reversed = (5 to 1 by -1).toList
 
-    ListUtil.reverse(list) should equal (expected)
+    ListUtil.reverse(list) should equal (reversed)
   }
 
   it should "be capable of reversing a list of strings" in {
     val list     = List("foo", "bar", "baz")
-    val expected = List("baz", "bar", "foo")
+    val reversed = List("baz", "bar", "foo")
 
-    ListUtil.reverse(list) should equal (expected)
+    ListUtil.reverse(list) should equal (reversed)
   }
 
 }

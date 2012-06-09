@@ -3,5 +3,5 @@ Example emphasizing pragmatic approach to testing. Code in
 it.
 
 `ExceptionMailerService.groovy` can't be run independently but should be
-embedded in a [grails](http://grails.org) application using [mail
+embedded in a [Grails](http://grails.org) application using [mail
 plugin](http://grails.org/plugin/mail).

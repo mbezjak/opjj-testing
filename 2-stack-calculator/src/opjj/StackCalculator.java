@@ -2,20 +2,6 @@ package opjj;
 
 import java.util.Stack;
 
-/**
- * Usage example:
- * <pre>
- *   new StackCalculator()
- *       .push(5)
- *       .push(7)
- *       .push(3)
- *       .add()
- *       .add()
- *       .result(); // (3 + 7) + 5
- * </pre>
- * 
- * @author Miro Bezjak
- */
 public final class StackCalculator {
 
     private final Stack<Integer> stack = new Stack<Integer>();
