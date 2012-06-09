@@ -1,42 +1,22 @@
 Introduction to [mocks](http://en.wikipedia.org/wiki/Mock_object).
 
-Interesting files are located in `src` directory. The rest are
-[gradle](http://www.gradle.org) configuration files and gradle
-[wrapper](http://gradle.org/docs/current/userguide/gradle_wrapper.html) that
-should help in setting up an environment.
-
-Take a look at [groovy eclipse
-plugin](http://groovy.codehaus.org/Eclipse+Plugin) for groovy support in
-eclipse.
-
-NOTE: Use `gradlew.bat` instead of `./gradlew` when in Microsoft Windows.
+Required [EasyMock](http://www.easymock.org) library is provided in `lib`
+directory for simplicity. Other projects should use a build tool, such as
+[gradle](http://www.gradle.org).
 
 ## Import
+
 Steps to import this project into eclipse:
 
- 1. Open command line and execute:
-
-        $ ./gradlew eclipse
-
- 2. File -> Import
- 3. From "General" select "Existing Projects into Workspace"
- 4. Next
- 5. Select root directory: one where this readme is located
- 6. Finish
+ 1. File -> Import
+ 2. From "General" select "Existing Projects into Workspace"
+ 3. Next
+ 4. Select root directory: one where this readme is located
+ 5. Finish
 
 ## Test
-Steps to run all Spock tests:
 
- 1. Open command line and execute:
+Steps to run all JUnit tests:
 
-        $ ./gradlew test
-
- 2. Test report is generated in `build/reports/tests` directory. Open
-    `index.html` in any browser.
-
-## Fool around
-Steps to fool around with gradle:
-
- 1. Open command line and execute:
-
-        $ ./gradlew
+ 1. Right click on a project
+ 2. Run As -> JUnit test
