@@ -11,15 +11,15 @@ Augment `6-textual-money` and add support for:
  * millions; numbers: 0 - 999,999,999
  * proper declension:
 
-       tri tisuće kuna
-       tri tisuće tri kune
-       tri stotine trideset tri tisuće kuna
-       tri stotine trideset tri kune
+        tri tisuće kuna
+        tri tisuće tri kune
+        tri stotine trideset tri tisuće kuna
+        tri stotine trideset tri kune
 
  * lipe
 
-       petnaest kuna i tri lipe
-       tri kune i dvadeset devet lipa
+        petnaest kuna i tri lipe
+        tri kune i dvadeset devet lipa
 
 ## HW #3
 Augment `2-stack-calculator` and add support for minus, multiply and integer
@@ -34,7 +34,7 @@ these assumptions:
    `/`
  * numbers are one digit long:
 
-       "12+" == 3 // treated as 1 + 2
+        "12+" == 3 // treated as 1 + 2
 
  * calculator should fail on invalid input, example: `""`, `"+"`, `"1+"`, etc.
 
