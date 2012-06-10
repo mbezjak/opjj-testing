@@ -1,19 +1,21 @@
+Import this project into Eclipse and complete given homework
+assignments. Skeleton implementation code is provided in `src` directory.
+
 Homework assignments are considered incomplete if implementation isn't
-tested. Use JUnit 4 as in the presentation. Details for each homework are
-provided in javadoc.
+tested. Use JUnit 4 as in the presentation.
 
 ## HW #1
 Implement [factorial](http://en.wikipedia.org/wiki/Factorial) by using TDD.
 
 ## HW #2
-Augment `6-textual-money` and add support for:
+Implement new features in `MoneyToTextConverter`:
 
- * millions; numbers: 0 - 999,999,999
+ * millions
 
         pedeset sedam miliona kuna
         osam stotina miliona kuna
 
- * proper declension:
+ * proper declension
 
         tri tisuće kuna
         tri tisuće tri kune
@@ -26,8 +28,12 @@ Augment `6-textual-money` and add support for:
         tri kune i dvadeset devet lipa
 
 ## HW #3
-Augment `2-stack-calculator` and add support for minus, multiply and integer
-division.
+Implement minus, multiply and integer division methods in `StackCalculator`.
+
+    calc.push(4).push(3).minus().result();    // 1
+    calc.push(4).push(3).multiply().result(); // 12
+    calc.push(4).push(3).divide().result();   // 1
+    calc.push(6).push(3).divide().result();   // 2
 
 ## HW #4
 Implement [Reverse Polish
@@ -35,14 +41,22 @@ notation](http://en.wikipedia.org/wiki/Reverse_polish_notation) calculator with
 these assumptions:
 
  * supported operations are plus `+`, minus `-`, times `*` and integer division
-   `/`
+   `/` and no other
  * numbers are one digit long:
 
-        "12+" == 3 // treated as 1 + 2
+        "12+"   == 3  // treated as 1 + 2
+        "57*"   == 35 // treated as 5 * 7
+        "123++" == 6  // treated as 1 + (2 + 3)
 
- * calculator should fail on invalid input, example: `""`, `"+"`, `"1+"`, etc.
+ * calculator should throw exception on invalid input, example: `""`, `"+"`,
+   `"1+"`, etc.
+ * calculator should throw exception when, after consuming all input, stack
+   isn't reduced to only one item
 
-Hint: use already implemented stack calculator
+        "123+" // error, stack is [1, 5]
+        "1"    // ok, stack is [1]
+
+Hint: use stack calculator; there is no need to use mocks
 
 ## HW #5
 Implement [Caesar cipher](http://en.wikipedia.org/wiki/Caesar_cipher) with these
