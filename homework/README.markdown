@@ -40,8 +40,8 @@ Implement [Reverse Polish
 notation](http://en.wikipedia.org/wiki/Reverse_polish_notation) calculator with
 these assumptions:
 
- * supported operations are plus `+`, minus `-`, times `*` and integer division
-   `/` and no other
+ * supported operations are plus `+`, minus `-`, times `*`, integer division `/`
+   and no other
  * numbers are one digit long:
 
         "12+"   == 3  // treated as 1 + 2
@@ -62,7 +62,9 @@ Hint: use stack calculator; there is no need to use mocks
 Implement [Caesar cipher](http://en.wikipedia.org/wiki/Caesar_cipher) with these
 assumptions:
 
- * only small `[a-z]` characters are rotated
+ * input string consists only of [ASCII](http://en.wikipedia.org/wiki/Ascii)
+   characters
+ * only lower case `[a-z]` characters are rotated
  * every other character (including upper case characters) are left unchanged
 
 Afterwards, decode a couple of secret encrypted messages in a dedicated Java
