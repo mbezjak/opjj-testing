@@ -9,6 +9,10 @@ Implement [factorial](http://en.wikipedia.org/wiki/Factorial) by using TDD.
 Augment `6-textual-money` and add support for:
 
  * millions; numbers: 0 - 999,999,999
+
+        pedeset sedam miliona kuna
+        osam stotina miliona kuna
+
  * proper declension:
 
         tri tisuće kuna
