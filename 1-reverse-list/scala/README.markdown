@@ -4,7 +4,8 @@ configuration files that should help in setting up an environment.
 
 Start by installing scala [typesafe
 stack](http://typesafe.com/stack/download). Take a look at [scala eclipse
-plugin](http://scala-ide.org) for scala support in eclipse.
+plugin](http://scala-ide.org/download/current.html) for scala support in
+eclipse.
 
 ## Import
 Steps to import this project into eclipse:
