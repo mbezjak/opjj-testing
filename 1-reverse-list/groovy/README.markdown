@@ -32,6 +32,11 @@ Steps to run all Spock tests:
  2. Test report is generated in `build/reports/tests` directory. Open
     `index.html` in any browser.
 
+It is also possible to:
+
+ 1. Right click on a project
+ 2. Run As -> JUnit Test
+
 ## Fool around
 Steps to fool around with gradle:
 
