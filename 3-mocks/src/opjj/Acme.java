@@ -8,6 +8,11 @@ public final class Acme implements Employer {
     private final List<JobApplication> applications = new ArrayList<JobApplication>();
 
     @Override
+    public void accept(JobApplication application) {
+        applications.add(application);
+    }
+
+    @Override
     public void offerJob(int salary) {
         for (JobApplication application : applications) {
             if (salary >= application.getMinimumSalary()) {
@@ -16,11 +21,6 @@ public final class Acme implements Employer {
                 application.turnedDown();
             }
         }
-    }
-
-    @Override
-    public void accept(JobApplication application) {
-        applications.add(application);
     }
 
 }

@@ -9,24 +9,25 @@ import org.junit.Test;
 
 public class AcmeTest {
 
+    private Employer acme = new Acme();
+    private int acmeOffer = 90;
+
     @Test
     public void acmeShouldOfferAJobToEveryoneThatMeetRequirements() {
-        JobApplication johnDoe = createMock(JobApplication.class);
-        JobApplication janeDoe = createMock(JobApplication.class);
-        Employer acme = new Acme();
-        acme.accept(johnDoe);
-        acme.accept(janeDoe);
+        JobApplication john = createMock(JobApplication.class);
+        JobApplication jane = createMock(JobApplication.class);
+        acme.accept(john);
+        acme.accept(jane);
 
-        int salaryOffering = 90;
-        expect(johnDoe.getMinimumSalary()).andReturn(100);
-        expect(janeDoe.getMinimumSalary()).andReturn(80);
-        johnDoe.turnedDown();
-        janeDoe.jobOffered(salaryOffering);
-        replay(johnDoe, janeDoe);
+        expect(john.getMinimumSalary()).andReturn(100);
+        expect(jane.getMinimumSalary()).andReturn(80);
+        john.turnedDown();
+        jane.jobOffered(acmeOffer);
+        replay(john, jane);
 
-        acme.offerJob(salaryOffering);
+        acme.offerJob(acmeOffer);
 
-        verify(johnDoe, janeDoe);
+        verify(john, jane);
     }
 
 }
