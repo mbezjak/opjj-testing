@@ -25,15 +25,15 @@ public final class StackCalculator {
     }
 
     public StackCalculator minus() {
-        return null;
+        throw new UnsupportedOperationException("Not yet implemented");
     }
 
     public StackCalculator multiply() {
-        return null;
+        throw new UnsupportedOperationException("Not yet implemented");
     }
 
     public StackCalculator divide() {
-        return null;
+        throw new UnsupportedOperationException("Not yet implemented");
     }
 
     public int result() {
