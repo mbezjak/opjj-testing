@@ -12,8 +12,8 @@ Implement new features in `MoneyToTextConverter`:
 
  * millions
 
-        pedeset sedam miliona kuna
-        osam stotina miliona kuna
+        pedeset sedam milijuna kuna
+        osam stotina milijuna kuna
 
  * proper declension
 
