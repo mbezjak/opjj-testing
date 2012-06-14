@@ -3,7 +3,7 @@ package opjj.hw5;
 public class CaesarCipher {
 
     public String encode(String input, int shift) {
-        return null;
+        throw new UnsupportedOperationException("Not yet implemented");
     }
 
     public String decode(String input, int shift) {
