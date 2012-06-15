@@ -7,7 +7,7 @@ public class CaesarCipher {
     }
 
     public String decode(String input, int shift) {
-        return encode(input, -shift);
+        return encode(input, 26 - shift);
     }
 
 }
