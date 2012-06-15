@@ -33,7 +33,7 @@ public class StackCalculatorTest {
         int b = 5;
         calc.push(a).push(b).add();
 
-        assertEquals(a + b, calc.result());
+        assertEquals(b + a, calc.result());
         assertEquals(1, calc.size());
     }
 
