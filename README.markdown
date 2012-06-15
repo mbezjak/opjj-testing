@@ -6,9 +6,11 @@ Students should begin by [downloading this
 project](https://github.com/mbezjak/opjj-testing/zipball/master) and doing
 homework assignments.
 
-Presentation source is available as a [google document](...). PDF export is
-available as a part of this project. Code examples are available in directories
-that begin with a number. Homework is available in a separate directory.
+Presentation source is available as a [google
+document](https://docs.google.com/presentation/d/1AJOrG9N5yjKbfMSMTJr5HWggpkB-S3RvWn0CmQDrlBA/edit). PDF
+export is available as a part of this project. Code examples are available in
+directories that begin with a number. `gist-it.html` file embeds code examples
+into one html page. Homework is available in a separate directory.
 
 ## Eclipse
 Unless stated otherwise, the following rules apply.
