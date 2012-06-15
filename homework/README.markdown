@@ -12,18 +12,19 @@ Implement new features in `MoneyToTextConverter`:
 
  * millions
 
-        pedeset sedam milijuna kuna
-        osam stotina milijuna kuna
+        pedeset sedam milijuna kuna i nula lipa
+        osam stotina milijuna kuna i nula lipa
 
  * proper declension
 
-        tri tisuće kuna
-        tri tisuće tri kune
-        tri stotine trideset tri tisuće kuna
-        tri stotine trideset tri kune
+        tri tisuće kuna i nula lipa
+        tri tisuće tri kune i nula lipa
+        tri stotine trideset tri tisuće kuna i nula lipa
+        tri stotine trideset tri kune i nula lipa
 
  * lipe
 
+        tri kune i nula lipa
         petnaest kuna i tri lipe
         tri kune i dvadeset devet lipa
 
