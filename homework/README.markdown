@@ -30,7 +30,7 @@ Implement new features in `MoneyToTextConverter`:
 ## HW #3
 Implement minus, multiply and integer division methods in `StackCalculator`.
 
-    calc.push(4).push(3).minus().result();    // 1
+    calc.push(3).push(4).minus().result();    // 1
     calc.push(4).push(3).multiply().result(); // 12
     calc.push(3).push(4).divide().result();   // 1
     calc.push(3).push(6).divide().result();   // 2
