@@ -44,9 +44,10 @@ these assumptions:
    and no other
  * numbers are one digit long:
 
-        "12+"   == 3  // treated as 1 + 2
-        "57*"   == 35 // treated as 5 * 7
-        "123++" == 6  // treated as 1 + (2 + 3)
+        "12+"   == 3  // treated as 2 + 1
+        "57*"   == 35 // treated as 7 * 5
+        "34/"   == 1  // treated as 4 / 3
+        "123++" == 6  // treated as (3 + 2) + 1
 
  * calculator should throw exception on invalid input, example: `""`, `"+"`,
    `"1+"`, etc.
